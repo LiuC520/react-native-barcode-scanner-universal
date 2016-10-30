@@ -1,5 +1,5 @@
-import React from 'react-native'
-import BarcodeScanner from 'react-native-barcode-scanner-universal'
+import React,{ Component } from 'react-native';
+import BarcodeScanner from 'react-native-barcode-scanner-universal';
 const {
   StyleSheet,
   AppRegistry,
@@ -7,8 +7,8 @@ const {
   View
 } = React
 
-const App = React.createClass({
-  render: function () {
+export default class App extends Component({
+  render() {
     let scanArea = null
     if (Platform.OS === 'ios') {
       scanArea = (
