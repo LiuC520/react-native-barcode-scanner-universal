@@ -29,7 +29,7 @@ See:
 ```js
 import BarcodeScanner from 'react-native-barcode-scanner-universal'
 
-render: function () {
+render() {
   let scanArea = null
   if (Platform.OS === 'ios') {
     scanArea = (
